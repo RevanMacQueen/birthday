@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+    color: #1B1B1B;
+    background-color: #f9f9f9;
+}
+
+#container {
+   
+    width: 1100px;
+    margin-left: 300px ;
+   
+}
+
+#top {
+    border-bottom: 1px solid black;
+    width: 1100px;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+#name {
+    display: inline-block;
+    margin: 0;
+    width: 40%;
+    padding-left: 0px;
+}
+
+#name a {
+    font-family: 'Avenir';
+    font-weight: 300;
+    font-size: 48px;
+    color: black;
+    display:inline-block;
+    text-decoration: none;
+}
+
+#nav {
+    font-weight: 300;
+    display: inline-block;
+    text-align: right;
+    font-size: 20px;
+    width: 55%;
+
+}
+
+#nav a {
+    text-decoration: none;
+    color: #1a33f0;
+
+    -o-transition: color .75s;
+    -ms-transition: color .75s;
+    -moz-transition: color .75s;
+    -webkit-transition: color .75s;
+    transition: color .75s;
+}
+
+#nav a:hover {
+    color: #5309b0;
+    -o-transition: color .1s;
+    -ms-transition: color .1s;
+    -moz-transition: color .1s;
+    -webkit-transition: color .1s;
+    transition: color .1s;
+}
+
+#nav a.active {
+    color: #5309b0;
+}
+
+hr {
+    border-top: none;
+    border-bottom: 1px solid black;
+    margin-top: 15px;
+    display: none;
+}
+
+.custom-link {
+    color: #1aecf0;
+    
+
+    -o-transition: color .75s;
+    -ms-transition: color .75s;
+    -moz-transition: color .75s;
+    -webkit-transition: color .75s;
+    transition: color .75s;
+}
+
+.custom-link:hover {
+    color: #5309b0;
+
+    -o-transition: color .1s;
+    -ms-transition: color .1s;
+    -moz-transition: color .1s;
+    -webkit-transition: color .1s;
+    transition: color .1s;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  height: auto; 
+  width: auto; 
+  max-width: 300px; 
+  max-height: 300px;
+  vertical-align: middle;
+}
+
+#pic-contact {
+    display: inline-block;
+    vertical-align: top;
+    margin-top:  36px;
+}
+
+#pic-contact img {
+    width: 350px;
+    max-height:525px;
+}
+
+#about-info {
+    display: inline-block;
+    width: 630px;
+    position: relative;
+    left: 35px;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+
+
+.headline {
+    background-color: rgb(255, 241, 210);
+    padding: 2px 5px;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.heading {
+    font-size: 120px;
+    font-weight: 500;
+    color: #ff910a;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.heading2 {
+    font-size: 120px;
+    font-family: 'Brush Script MT';
+    font-weight: 500;
+    color: hsl(33, 100%, 52%);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.body {
+    font-size: 50px;
+    font-family: 'Comic Sans MS';
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+    color: #ff8e1e;
+    margin-bottom: 10px;
+}
+
+.about-desc {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-top: 36px;
+    text-align: justify;
+    border-top: 1px solid black;
+    font-size: 18px;
+}
+
+
+.project {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-top: 36px;
+    text-align: justify;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+}
+
+.bio {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-top: 36px;
+    text-align: justify;
+}
+
+
+#contact {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-top: 80px;
+    float: left;
+    text-align: justify;
+    
+}
+
+/* Desktop-first responsiveness */
+
+@media screen and (max-width: 980px) {
+    hr {
+        display: block;
+    }
+
+    #container {
+        width: 100%;
+    }
+
+    #name {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    #about-content {
+        width: 96%;
+        margin-top: 100px;
+        width: 1100px;
+        font-size: 16px;
+    }
+
+
+
+    
+
+    #about-info {
+        width: 100%;
+        text-align: center;
+        margin: 40px auto 0px;
+        padding: 0;
+        left: 0px;
+        bottom: 0px;
+        border: none;
+    }
+
+    #contact {
+        display: block;
+    }
+
+    .about-desc {
+        margin-top: 20px;
+    }
+
+}
+
